@@ -1,0 +1,57 @@
+/* @import url('./globals.css'); */
+
+.post {
+  display: flex;
+  border-bottom: 1px solid #dbdbdb;
+}
+.post:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.img-container {
+  height: 250px;
+  flex: 1;
+
+  & img {
+    object-fit: cover;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.content_title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.hot {
+  background-color: red;
+  color: #fff;
+  padding: .2em 1em;
+  border-radius: 100vh;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+}
+.hot-btn {
+  color: #a1a1a1;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.hot-btn:hover {
+  color: firebrick;
+}
